@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* MAIN */
+body {
+  margin: 0;
+  font-family: "IM Fell English SC", cursive, sans-serif;
+  letter-spacing: 0.07rem;
+  color: #f4f4f4;
+  background: url("./images/bg.jpg");
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 100, 120, 0.8)
+  );
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: 1px solid black;
+  width: 320px;
+  margin: auto;
+  flex-grow: 1;
+}
+footer {
+  color: teal;
+}
+
+/* ENTER */
+.enter__container {
+  margin-top: 2rem;
+  text-align: center;
+  cursor: pointer;
+  color: teal;
+}
+.enter__icon-btn {
+  margin-top: 2rem;
+}
+.enter__text {
+  padding: 0.5rem;
+}
+.enter__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  border: 1px solide black;
+  box-shadow: 5px 5px 15px -5px black;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+a {
+  text-decoration: none;
+}
+
+/* QUIZ */
+.quiz__container {
+  display: grid;
+  gap: 1rem;
+  padding: 0.5rem;
+  animation: fadein 1s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.quiz__counter {
+  display: flex;
+  justify-content: space-around;
+}
+.quiz__input {
+  margin: auto;
+  padding-left: 1rem;
+  color: teal;
+  font-size: large;
+  font-family: "IM Fell English SC", cursive, sans-serif;
+  width: 150px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid teal;
+  border-radius: 0.5rem;
+}
+.quiz__number {
+  color: orange;
+  font-size: 1.5rem;
+
+  padding: 0.3rem;
+}
+.quiz__gif {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  border: 1px solid black;
+  box-shadow: 5px 5px 15px -5px black;
+}
+.quiz__question {
+  color: orange;
+  height: 150px;
+}
+.quiz__btn,
+.lose__btn {
+  width: 150px;
+  height: 50px;
+  color: black;
+  background-color: teal;
+  margin: auto;
+  border: none;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px -5px black;
+}
+
+.win__container,
+.lose__container {
+  display: grid;
+  gap: 1rem;
+}
+.win__icon,
+.lose__icon {
+  margin-top: 2rem;
+  color: teal;
+}
+.win__text,
+.lose__text {
+  padding: 0.5rem;
+}
+.win__image {
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  box-shadow: 5px 5px 15px -5px black;
+  width: 300px;
+  margin: auto;
+}
