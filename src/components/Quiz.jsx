@@ -48,12 +48,12 @@ const Quiz = () => {
         setGif(right)
         setTimeout(() => {
           nextQuestion()
-        }, 3500) //<--<< Tweek time
+        }, 3800) //<--<< Tweek time
       } else {
         setGif(wrong)
         setTimeout(() => {
           nextQuestion()
-        }, 3500) //<--<< Tweek time
+        }, 3800) //<--<< Tweek time
       }
     } else {
       alert("Ney! enter your answer Franciska!")
@@ -77,11 +77,11 @@ const Quiz = () => {
     if (score >= 4) {
       setTimeout(() => {
         navigate("/win")
-      }, 4000) //<--<< Tweek time
+      }, 0) //<--<< Tweek time
     } else {
       setTimeout(() => {
         navigate("/lose")
-      }, 4000) //<--<< Tweek time
+      }, 0) //<--<< Tweek time
     }
   }
 

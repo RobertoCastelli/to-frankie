@@ -43,11 +43,11 @@ footer {
 .enter__container {
   margin-top: 2rem;
   text-align: center;
-  cursor: pointer;
   color: teal;
 }
 .enter__icon-btn {
   margin-top: 2rem;
+  cursor: pointer;
 }
 .enter__text {
   padding: 0.5rem;
