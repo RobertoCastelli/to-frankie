@@ -1,5 +1,6 @@
 # To Frankie
-> dark wave poetry
+
+> a dark wave of poetry
 
 Enjoy!
 

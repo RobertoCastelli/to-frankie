@@ -20,6 +20,7 @@ const Quiz = () => {
   const [question, setQuestion] = useState("")
   const [gif, setGif] = useState(rob)
 
+  // NAVIGATE
   let navigate = useNavigate()
 
   // INIT
@@ -34,9 +35,7 @@ const Quiz = () => {
   }
 
   // HANDLE FOCUS
-  const handleFocus = (e) => {
-    setInputResponse((e.target.value = ""))
-  }
+  const handleFocus = (e) => setInputResponse((e.target.value = ""))
 
   // HANDLE CLICK
   const handleClick = () => {
@@ -73,17 +72,7 @@ const Quiz = () => {
   }
 
   // END GAME
-  const endGame = () => {
-    if (score >= 4) {
-      setTimeout(() => {
-        navigate("/win")
-      }, 0) //<--<< Tweek time
-    } else {
-      setTimeout(() => {
-        navigate("/lose")
-      }, 0) //<--<< Tweek time
-    }
-  }
+  const endGame = () => (score >= 4 ? navigate("/win") : navigate("/lose"))
 
   // RENDER
   return (

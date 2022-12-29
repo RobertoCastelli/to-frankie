@@ -82,6 +82,7 @@ footer {
 }
 a {
   text-decoration: none;
+  color: teal;
 }
 
 /* QUIZ */
@@ -145,6 +146,10 @@ a {
   border: 1px solid black;
   cursor: pointer;
   box-shadow: 5px 5px 15px -5px black;
+}
+.quiz__btn:active {
+  transform: translateY(3px);
+  box-shadow: 1px 1px 10px -5px black;
 }
 
 .win__container,
