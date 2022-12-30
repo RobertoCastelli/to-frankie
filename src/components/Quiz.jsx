@@ -62,7 +62,7 @@ const Quiz = () => {
   // NEXT QUESTION
   const nextQuestion = () => {
     console.log(counter) //<--<< Delete
-    if (counter !== 5) {
+    if (counter < 5) {
       setGif(rob)
       setCounter(counter + 1)
       setCurrentQuestion(currentQuestion + 1)
@@ -84,7 +84,7 @@ const Quiz = () => {
         </div>
         <div>
           <FaTrophy />
-          <span className="quiz__number">{score}</span>/4
+          <span className="quiz__number">{score}</span>/5
         </div>
       </div>
       <img className="quiz__gif" src={gif} alt="img-result" />
